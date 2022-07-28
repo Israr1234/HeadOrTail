@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Head or Tail</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="option">
+			<p>Select the player who wants to play first</p>
+			<input
+				type="radio"
+				name="players"
+				onclick="selectPlayer(event)"
+				data-key="1"
+			/>
+			player-1
+			<input
+				type="radio"
+				name="players"
+				onclick="selectPlayer(event)"
+				data-key="2"
+			/>
+			player-2
+		</div>
+		<div class="btn">
+			<button onclick="selectSide('heads')">Head</button>
+			<button onclick="selectSide('tails')">Tail</button>
+		</div>
+        
+		<div class="main">
+			
+			<div class="output1" id="player1">
+				
+				<span class="toss"></span> <br>
+				<span class="wins">  0</span>
+			</div>
+			<div class="output2" id="player2">
+				
+				<span class="toss"></span> <br>
+				<span class="wins"> 0</span>
+			</div>
+		</div>
+		<div class="toss-btn">
+			<span id="tossed_value"></span>
+			<button onclick="handleToss()">Toss</button>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

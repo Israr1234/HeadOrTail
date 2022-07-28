@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+	display: flex;
+	justify-content: space-around;
+}
+.output1,
+.output2 {
+	width: 40%;
+	height: 30vh;
+	border: 2px solid black;
+	margin-top: 100px;
+}
+.btn {
+	width: 70vw;
+	height: 10vh;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn button {
+	width: 40%;
+	height: 80%;
+	background-color:brown;
+	color: white;
+	font-size: 36px;
+	margin-left: 10px;
+    border: none;
+    transition: all 3s ease;
+}
+    .btn button:hover{
+    background-color: blanchedalmond;
+    border-color:blanchedalmond;
+    /* transition: all 5s ease; */
+}
+.option {
+	text-align: center;
+	width: 100%;
+	height: 100px;
+}
+.toss-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.toss-btn button {
+	background-color:brown;
+    transition: all 3s ease;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: all 3s ease;
+}
+ 
+.toss-btn button:hover{
+    border-color: blanchedalmond;
+    background-color: blanchedalmond;
+}
